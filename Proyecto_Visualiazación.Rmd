@@ -1,6 +1,6 @@
 ---
 title: "Proyecto Visualizacion de Datos"
-author: "Benito Pastor Sanchez & Pedro Gil Martin & Alejandro Hernandez Beneito & Rosa Martinez Enrich & Jorge Albalat Luengo"
+author: "Benito Pastor Sanchez & Pedro Gil Martin & Alejandro Hernandez Beneito   & Rosa Martinez Enrich & Jorge Albalat Luengo"
 date: "2023-04-14"
 output:
   html_document: default
