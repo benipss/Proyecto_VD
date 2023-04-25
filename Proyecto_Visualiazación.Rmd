@@ -21,7 +21,7 @@ Para ello leemos los datos proporcionados por el ayuntamiento de valencia:
 library(readr)
 library(dplyr)
 
-df <- read_delim("DATOS/rvvcca.csv", 
+df <- read_delim("rvvcca.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
 ```
 
@@ -167,3 +167,9 @@ Una vez hecho lo exporto para introducirlo en QGIS:
 ```{r}
 write.csv(CASO1, file = "CASO1.csv", row.names = FALSE)
 ```
+
+Introducimos a QGIS como capa de texto delimitado CASO1 y seleccionamos los campos x e y como coordenadas. Luego,...
+
+Una vez tenemos ambas capas, modificamos los campos de cada una de las capas para que tengan el mismo nombre y el mismo tipo de dato. Como los únicos campos que no coinciden entre ambas capas son: por parte de la capa CASO1 son las variables x e y, por otro lado, en la capa .... la variable globalid.
+
+Al unir estas capas, obtenemos una capa final con todas las estaciones y sus respectivos datos sin importar qué variables usan como coordenadas. Es decir, los atributos de esta nueva capa son los comunes entre las capas anteriores y los campos x,y y globalid.
