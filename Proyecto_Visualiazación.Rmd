@@ -173,3 +173,19 @@ Introducimos a QGIS como capa de texto delimitado CASO1 y seleccionamos los camp
 Una vez tenemos ambas capas, modificamos los campos de cada una de las capas para que tengan el mismo nombre y el mismo tipo de dato. Como los únicos campos que no coinciden entre ambas capas son: por parte de la capa CASO1 son las variables x e y, por otro lado, en la capa .... la variable globalid.
 
 Al unir estas capas, obtenemos una capa final con todas las estaciones y sus respectivos datos sin importar qué variables usan como coordenadas. Es decir, los atributos de esta nueva capa son los comunes entre las capas anteriores y los campos x,y y globalid.
+
+## 6. Buffer
+
+Realizamos una capa de áreas de influencia para cada estación
+
+![](images/buffer-01.png)
+
+## 7. Interpolación 
+
+Hacemos una interpolación IDW para cada sustancia química que se puede encontrar en cada estación.
+
+![](Interpolado.png)
+
+Sin embargo, obtenemos un ráster rectangular, la cual debemos cortar por capa de máscara para visualizar únicamente las zonas de Valencia que necesitamos
+
+![](Corte_por_capa.png)
